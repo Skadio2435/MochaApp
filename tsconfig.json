@@ -5,12 +5,7 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "types": [
-            "mocha"
-         ],
-         "typeRoots": [
-           "./node_modules/@types"
-         ]
-    },
-    
+        "types": ["mocha"],
+        "typeRoots": ["./node_modules/@types"]
+    }
 }
