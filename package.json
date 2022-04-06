@@ -1,36 +1,41 @@
 {
-  "name": "mocha-app",
-  "version": "1.0.0",
-  "description": "App where I set up development with mocha",
-  "main": "index.js",
-  "keywords": [],
-  "author": "Dinu",
-  "license": "ISC",
-  "engines": {
-    "node": "14.4.0"
-  },
-  "prettier": {
-    "printWidth": 120,
-    "singleQuote": true,
-    "tabWidth": 4,
-    "semicolons": true,
-    "arrowParens": "avoid"
-  },
-  "scripts": {
-    "start:dev": "nodemon core/app.ts",
-    "test": "mocha"
-  },
-  "dependencies": {
-    "koa": "^2.13.4",
-    "koa-router": "^10.1.1"
-  },
-  "devDependencies": {
-    "@types/koa": "^2.13.4",
-    "@types/koa-router": "^7.4.4",
-    "mocha": "^9.2.2",
-    "nodemon": "^2.0.15",
-    "prettier": "^2.6.2",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.3"
-  }
+    "name": "mocha-app",
+    "version": "1.0.0",
+    "description": "App where I set up development with mocha",
+    "main": "index.js",
+    "keywords": [],
+    "author": "Dinu",
+    "license": "ISC",
+    "engines": {
+        "node": "14.4.0"
+    },
+    "prettier": {
+        "printWidth": 120,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "semicolons": true,
+        "arrowParens": "avoid"
+    },
+    "scripts": {
+        "start:dev": "nodemon core/app.ts",
+        "test": "mocha",
+        "log": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0"
+    },
+    "pre-commit": [
+        "log"
+    ],
+    "dependencies": {
+        "koa": "^2.13.4",
+        "koa-router": "^10.1.1"
+    },
+    "devDependencies": {
+        "@types/koa": "^2.13.4",
+        "@types/koa-router": "^7.4.4",
+        "mocha": "^9.2.2",
+        "nodemon": "^2.0.15",
+        "pre-commit": "^1.2.2",
+        "prettier": "^2.6.2",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    }
 }
