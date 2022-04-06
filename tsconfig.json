@@ -1,1 +1,16 @@
-{}
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "types": [
+            "mocha"
+         ],
+         "typeRoots": [
+           "./node_modules/@types"
+         ]
+    },
+    
+}
