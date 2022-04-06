@@ -1,0 +1,4 @@
+#main folders
+/node_modules
+
+/package-lock.json
