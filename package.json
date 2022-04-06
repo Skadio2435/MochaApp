@@ -25,9 +25,7 @@
         "test": "mocha",
         "log": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0"
     },
-    "pre-commit": [
-        "test"
-    ],
+    "pre-commit": "test",
     "dependencies": {
         "@types/chai": "^4.3.0",
         "@types/mocha": "^9.1.0",
