@@ -17,9 +17,9 @@
         "arrowParens": "avoid"
     },
     "mocha": {
-        "spec": "./**/*.spec.js"
+        "spec": "./**/*.spec.ts",
+        "require": "ts-node/register"
     },
-    "type": "module",
     "scripts": {
         "start:dev": "nodemon core/app.ts",
         "test": "mocha",
