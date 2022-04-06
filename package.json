@@ -23,7 +23,6 @@
     "scripts": {
         "start:dev": "nodemon core/app.ts",
         "test": "mocha",
-        "log": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0",
         "prettier": "prettier --write **/*.ts"
     },
     "pre-commit": [
