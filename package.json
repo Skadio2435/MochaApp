@@ -26,7 +26,6 @@
         "log": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0"
     },
     "pre-commit": [
-        "log",
         "test"
     ],
     "dependencies": {
