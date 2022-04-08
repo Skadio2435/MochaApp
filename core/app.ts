@@ -1,6 +1,6 @@
 import Koa from 'koa';
 
-function runApp() {
+async function runApp() {
     const app = new Koa();
 
     app.use(async ctx => {
