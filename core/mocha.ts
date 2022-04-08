@@ -49,8 +49,7 @@ async function runTestEnviroment() {
     await App;
 
     const mocha = new Mocha({
-        // growl: true,
-        // grep: 'Session',
+        timeout: 240000,
     });
 
     const testFiles: string[] = findTestFilesInDirectories(['modules', 'core']);
@@ -58,11 +57,6 @@ async function runTestEnviroment() {
     testFiles.forEach(file => {
         mocha.addFile(file);
     });
-
-    const grep = process.argv[2];
-
-    if (grep) mocha.grep(grep);
-    mocha.timeout(240000);
 
     mocha.run(failures => {
         if (failures > 0) return process.exit(1);
