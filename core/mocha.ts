@@ -50,7 +50,7 @@ async function runTestEnviroment() {
 
     const mocha = new Mocha({
         timeout: 240000,
-        color: true
+        color: true,
     });
 
     const testFiles: string[] = findTestFilesInDirectories(['modules', 'core']);
