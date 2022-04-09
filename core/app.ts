@@ -1,7 +1,11 @@
 import Koa from 'koa';
+import db from './database';
 
 async function runApp() {
+
     const app = new Koa();
+
+    await db.setup();
 
     app.use(async ctx => {
         ctx.body = 'Message';

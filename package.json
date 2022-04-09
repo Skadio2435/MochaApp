@@ -9,11 +9,6 @@
     "engines": {
         "node": "14.4.0"
     },
-    "nodemonConfig": {
-        "events": {
-            "restart": "npm test"
-        }
-    },
     "prettier": {
         "printWidth": 120,
         "singleQuote": true,
@@ -26,14 +21,14 @@
         "require": "ts-node/register"
     },
     "scripts": {
-        "start:dev": "nodemon core/app.ts",
-        "testApp": "ts-node ./core/mocha.ts",
+        "dev": "nodemon core/app.ts",
+        "testAppPrecommit": "ts-node ./core/mocha.ts",
         "prettier": "prettier --write **/*.ts",
         "test": "mocha --watch --watch-files **/*.spec.ts --grep",
-        "testAll": "mocha "
+        "testAll": "mocha"
     },
     "pre-commit": [
-        "testApp",
+        "testAppPrecommit",
         "prettier"
     ],
     "dependencies": {
@@ -41,8 +36,10 @@
         "@types/mocha": "^9.1.0",
         "@types/sinon": "^10.0.11",
         "chai": "^4.3.6",
+        "dotenv": "^16.0.0",
         "koa": "^2.13.4",
         "koa-router": "^10.1.1",
+        "mongoose": "^6.2.10",
         "sinon": "^13.0.1"
     },
     "devDependencies": {
