@@ -1,13 +1,14 @@
 {
     "compilerOptions": {
         "target": "ES5",
-        "esModuleInterop":true,
+        "esModuleInterop": true,
         "module": "commonjs",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true,
-        "types": ["node","mocha"],
+        "sourceMap": false,
+        "types": ["node", "mocha"],
         "typeRoots": ["./node_modules/@types"]
-    }
+    },
+    "exclude": ["node_modules", "**/*.spec.ts", "test"]
 }

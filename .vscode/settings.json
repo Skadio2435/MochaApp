@@ -7,6 +7,9 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
         "**/node_modules": true,
-        "**/.vscode": true
-    }
+        "**/.vscode": false
+    },
+    "mochaExplorer.files": "**/*.spec.ts",
+    "mochaExplorer.require": ["ts-node/register/transpile-only"],
+    "mochaExplorer.ui": "bdd"
 }
