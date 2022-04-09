@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-describe('Test TDD', () => {
+describe('Test BDD', () => {
     it('SHould do ', () => {
         expect(1).equal(1);
     });
