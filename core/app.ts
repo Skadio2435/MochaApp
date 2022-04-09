@@ -6,9 +6,7 @@ async function runApp() {
 
     await db.setup();
 
-    app.use(async ctx => {
-        ctx.body = 'Message';
-    });
+    app.use(async ctx => {ctx.body = 'Message';});
 
     app.listen(3001, () => console.log('Server has been started at 3000'));
 }
