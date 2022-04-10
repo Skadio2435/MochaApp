@@ -20,7 +20,7 @@
         "dev": "nodemon core/app.ts",
         "prettier": "prettier --write **/*.ts",
         "test": "mocha -r ts-node/register -r test/rootHooks/connectDB.ts --spec **/*.spec.ts -w --watch-files **/*.spec.ts -g",
-        "testApp": "mocha -r ts-node/register --require test/rootHooks/runApp.ts --spec **/*.spec.ts --exit"
+        "testApp": "mocha -r ts-node/register --require test/rootHooks/runApp.ts --spec **/*.spec.ts --color --exit"
     },
     "pre-commit": [
         "prettier",
