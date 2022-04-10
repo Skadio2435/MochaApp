@@ -18,7 +18,7 @@
     },
     "scripts": {
         "dev": "nodemon core/app.ts",
-        "prettier": "prettier --write **/*.ts",
+        "prettier": "pretty-quick --staged",
         "test": "mocha --config test/configs/watch.mocharc.json -g",
         "testApp": "mocha -r ts-node/register --config test/configs/testApp.mocharc.json"
     },
@@ -43,6 +43,7 @@
         "nyc": "^15.1.0",
         "pre-commit": "^1.2.2",
         "prettier": "^2.6.2",
+        "pretty-quick": "^3.1.3",
         "ts-node": "^10.7.0",
         "typescript": "^4.6.3"
     }
