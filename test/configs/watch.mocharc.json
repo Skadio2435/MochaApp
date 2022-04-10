@@ -1,5 +1,6 @@
 {
     "require": ["ts-node/register/transpile-only", "./test/rootHooks/connectDB.ts"],
+    "file": ["test/configs/setupEnvironment.ts"],
     "watchFiles": "**/*.spec.ts",
     "spec": "**/*.spec.ts",
     "watch": true,
