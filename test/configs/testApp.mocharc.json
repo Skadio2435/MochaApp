@@ -1,0 +1,7 @@
+{
+    "require": ["ts-node/register", "./test/rootHooks/runApp.ts"],
+    "spec": "**/*.spec.ts",
+    "color": true,
+    "exit": true,
+    "ui": "bdd"
+}

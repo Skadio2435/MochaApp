@@ -1,0 +1,5 @@
+{
+    "require": ["ts-node/register/transpile-only", "./test/rootHooks/connectDB.ts"],
+    "spec": "**/*.spec.ts",
+    "ui": "bdd"
+}
