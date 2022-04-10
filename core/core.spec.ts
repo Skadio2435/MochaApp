@@ -7,6 +7,6 @@ describe('Core test', () => {
         const customers = await Customers.find({});
         console.log('A test');
 
-        expect(1).to.be.equal(1);
+        expect(process.env.NODE_ENV).to.be.equal('mocha');
     });
 });

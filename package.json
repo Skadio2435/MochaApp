@@ -23,8 +23,8 @@
         "testApp": "mocha -r ts-node/register --require test/rootHooks/runApp.ts --spec **/*.spec.ts --exit"
     },
     "pre-commit": [
-        "testApp",
-        "prettier"
+        "prettier",
+        "testApp"
     ],
     "dependencies": {
         "@types/chai": "^4.3.0",
