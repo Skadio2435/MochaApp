@@ -16,20 +16,14 @@
         "semi": true,
         "arrowParens": "avoid"
     },
-    "mocha": {
-        "spec": "./**/*.spec.ts",
-        "require": "ts-node/register",
-        "ui": "tdd"
-    },
     "scripts": {
         "dev": "nodemon core/app.ts",
-        "testAppPrecommit": "ts-node ./core/mocha.ts",
         "prettier": "prettier --write **/*.ts",
-        "test": "mocha --watch --watch-files **/*.spec.ts --grep",
-        "testAll": "mocha"
+        "test": "mocha -r ts-node/register -r test/rootHooks/connectDB.ts --spec **/*.spec.ts -w --watch-files **/*.spec.ts -g",
+        "testApp": "mocha -r ts-node/register --require test/rootHooks/runApp.ts --spec **/*.spec.ts --exit"
     },
     "pre-commit": [
-        "testAppPrecommit",
+        "testApp",
         "prettier"
     ],
     "dependencies": {

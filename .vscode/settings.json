@@ -9,7 +9,5 @@
         "**/node_modules": true,
         "**/.vscode": false
     },
-    "mochaExplorer.files": "**/*.spec.ts",
-    "mochaExplorer.require": ["ts-node/register/transpile-only"],
-    "mochaExplorer.ui": "bdd"
+    "mochaExplorer.configFile": "test/vscodeConfig/.mocharc.js"
 }

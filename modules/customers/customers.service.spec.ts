@@ -1,6 +1,12 @@
 import { expect } from 'chai';
+import App from '../../core/app';
+import db from '../../core/database';
 
 describe('Test BDD', () => {
+    // before(async () => {
+    //     // await App
+    //     // await db.setup();
+    // });
     it('SHould do ', () => {
         expect(1).equal(1);
     });
