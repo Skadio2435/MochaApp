@@ -9,5 +9,5 @@
         "**/node_modules": true,
         "**/.vscode": false
     },
-    "mochaExplorer.configFile": "test/vscodeConfig/.mocharc.js"
+    "mochaExplorer.configFile": "test/configs/vscode.mocharc.json"
 }

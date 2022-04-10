@@ -1,6 +1,5 @@
 import { NODE_ENVS } from './static';
 import dotenv from 'dotenv';
-
 dotenv.config();
 
 const envs = {

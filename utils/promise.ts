@@ -1,4 +1,4 @@
-async function TO(p: Promise<any>): Promise<[any, any]> {
+async function TO(p: Promise<any>) {
     try {
         const result = await p;
         return [null, result];
