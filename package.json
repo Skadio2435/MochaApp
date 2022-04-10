@@ -22,10 +22,7 @@
         "test": "mocha --config test/configs/watch.mocharc.json -g",
         "testApp": "mocha -r ts-node/register --config test/configs/testApp.mocharc.json"
     },
-    "pre-commit": [
-        "prettier",
-        "testApp"
-    ],
+    "pre-commit": "prettier, testApp",
     "dependencies": {
         "@types/chai": "^4.3.0",
         "@types/mocha": "^9.1.0",
